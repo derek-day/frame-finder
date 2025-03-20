@@ -26,17 +26,17 @@ function Search({csvData}) {
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState([]);
   const filePath = path.join(process.cwd(), 'public/data/', 'testitems.csv');
-  const file = fs.readFileSync(filePath, 'utf8');
+  // const file = fs.readFileSync(filePath, 'utf8');
 
-  useEffect(() => {
-    Papa.parse(csvData, {
-      header: true,
-      complete: (results) => {
-        setData(results.data);
-        setResults(results.data);
-      },
-    });
-  }, [csvData]);
+  // useEffect(() => {
+  //   Papa.parse(csvData, {
+  //     header: true,
+  //     complete: (results) => {
+  //       setData(results.data);
+  //       setResults(results.data);
+  //     },
+  //   });
+  // }, [csvData]);
 
   const handleSearch = (event) => {
     const term = event.target.value;
