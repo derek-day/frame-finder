@@ -1,0 +1,1 @@
+select [Posting Date], [No], [Sell to Customer No], [Bill to Customer No], [Salesperson Code] from [Posted Sales Transactions_R] where [Posting Date] > '2024-10-01' and [Posting Date] < '2025-02-15' and [Location Code] = 'MAIN' and [Product Posting Group] = 'FRAME'

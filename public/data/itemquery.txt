@@ -1,0 +1,1 @@
+select [Color Name], [Collection Name], [Gender Name], [No], [Description], [Item UPC/EAN Number], [Eye Size Description] from [Item_V] where [Inventory Posting Group] = 'FRAME'
